@@ -1,0 +1,43 @@
+:root{
+    --font:'Lato', sans-serif;
+    --colorbutton: #0095F6;
+    --bg: #FAFAFA;
+    --container: #FFFFFF;
+}
+
+/* globals */
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 65vh;
+    background-color: var(--bg);
+}
+img {
+    max-width: 100%;
+    display: block;
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2fr, 20rem);
+}
+.container {
+    background-color: var(--container);
+    width: 35rem;
+    height: 40rem;
+
+}
+.phone {
+    width: 30rem;
+    height: 20rem;
+}
