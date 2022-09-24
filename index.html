@@ -9,29 +9,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
     <title>Instagram</title>
 </head>
 <body>
-    <main class="grid">
-        <div class="phone">
-        </div>
-        <div class="container">
-            <div class="logo">
-                <img src="/img/ig.png">
+    <main>
+        <article class="sections">
+            <div class="showapp">
+                <img src="/img/phone.png" alt="phone">
             </div>
-            
-              <div class="login">
-                <input class="user">
-                <input class="password">
-                <button class="submit">Iniciar Sesion</button>
-              </div> 
-            
-            <div class="facebook">
-                <a>Iniciar sesion con Facebook</a>
-                <a>¿Olvidaste tu contraseña?</a>
+            <div class="allsquare">
+                <div class="square">
+                    <div class="logo">
+                        <img src="/img/ig.png" alt="instagram">
+                    </div>
+                    <form class="signin">
+                        <input class="user" aria-label="Telefono, usuario o correo electronico"
+                        type="text" autocapitalize="off"
+                        placeholder="Telefono, usuario o correo electronico" name="user">
+                        <input class="password" aria-label="Contraseña"
+                        type="password" autocapitalize="off"
+                        placeholder="Contraseña" name="password">
+                        <a class="button" href="https://www.twitter.com/kevin5m">Iniciar Sesion</a>
+                    </form>
+                    <div class="line"></div>
+                    <div class="otherforms">
+                        <a class="facebook" href="#">Iniciar sesion con facebook</a>
+                        <a class="forgot" href="#">¿Olvidaste tu Contraseña?</a>
+                    </div>
+                </div>
+                <div class="square2">
+                    <p class="q1">¿No tienes una cuenta? </p><a class="register" href="https://www.twitter.com/kevin5m">Registrate</a>
+                </div>
+                <div class="mygit">
+                    <a class="contact" href="https://github.com/kevdev04"></a>
+                </div>
             </div>
-
-        </div>
+        </article>
     </main>
 </body>
 </html>

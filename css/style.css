@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: 65vh;
+    min-height: 80vh;
     background-color: var(--bg);
 }
 img {
@@ -27,68 +27,164 @@ img {
     display: block;
 
 }
-.grid {
+.sections{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: 33rem 35rem;
 }
-.container {
+/* phone img */
+.showapp img {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    width: 35rem;
-    height: 40rem;
-    border-color: #DBDBDB;
-    border-style: solid;
-    border-width: 1px;
-    background-color: var(--container);
-    padding: 2rem 0 2rem 0;
-    
+    max-width: 30rem;
+}
 
-}
-.logo {
-    max-width: 170px;
-    margin: 2rem 0 2rem 0;
-}
-.login{
+/* login part */
+
+.square{
     display: flex;
-    gap: 1rem;
+    justify-content:center;
+    align-items: center;
     flex-direction: column;
+    border: 1px solid #d0c6c6;
+    border-radius: .5rem;
+    background-color: #FFFFFF;
+    height: 40rem;
 }
-.user {
-    appearance: none;
+.logo{
+    max-width: 20rem;
 }
-.password {
-    appearance: none;
-}
-.submit{
-    background-color: var(--colorbutton);
-    border: none;
-    font-size: 1rem;
-    font-family: var(--font);
-    color: #FFFFFF;
-    padding: 1rem;
-    transition: background-color .5s ease;
-    border-radius: 1rem;
-    width: 19rem;
-    height: 2px;
 
-}
-.facebook{
+/* signin form */
+
+.signin {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
+    gap: .7rem;
+
 }
 
+.user {
+    width: 25rem;
+    height: 4rem;
+    border-radius: .5rem;
+    border: 1px solid #d0c6c6;
+    text-align: start;
+    text-decoration: none;
+    text-indent: 1rem;
+    font-family: var(--font);
+    font-size: 1.2rem;
+    background-color:var(--bg);
+}
+.password {
+    width: 25rem;
+    height: 4rem;
+    border-radius: .5rem;
+    border: 1px solid #d0c6c6;
+    text-align: start;
+    text-decoration: none;
+    text-indent: 1rem;
+    font-family: var(--font);
+    font-size: 1.2rem;
+    background-color:var(--bg);
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 25rem;
+    height: 3.2rem;
+    border-radius: .5rem;
+    border: 1px solid #d0c6c6;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font);
+    color: #FAFAFA;
+    font-size: 1.4rem;
+    background-color: var(--colorbutton);
+}
+
+/* facebook login */
+
+.line {
+    margin-top: 2rem;
+    font-family: var(--font);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color:#d0c6c6;
+    width: 25rem;
+    border-bottom: 1px solid #d0c6c6;
+}
+.otherforms {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.facebook {
+    font-size:1.6rem;
+    font-weight: 700;
+    font-family: var(--font);
+    text-decoration: none;
+}
+.forgot {
+    font-size:1.2rem;
+    font-weight: 400;
+    font-family: var(--font);
+    text-decoration: none;
+}
+
+/* square bottom */
+
+.square2 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    gap: .5rem;
+    border: 1px solid #d0c6c6;
+    border-radius: .5rem;
+    background-color: #FFFFFF;
+
+    height: 5rem;
+    margin-top: 1rem;
 
 
+}
+.q1 {
+    font-size: 1.3rem;
+    font-family: var(--font);
+}
+.register {
+    font-size: 1.4rem;
+    font-family: var(--font);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--colorbutton);
+}
 
-.phone {
+/* author */
 
-    background-image: url(/img/phone.png);
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-family: var(--font);
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--colorbutton);
+
+    background-image: url(/img/GitHub-Mark-64px.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 4rem;
+    background-position: 15rem;
+
+    height: 5rem;
 }
